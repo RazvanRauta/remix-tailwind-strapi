@@ -1,0 +1,35 @@
+query PostBySlug($slug: String!, $state: PublicationState!) {
+  posts(filters: { slug: { eq: $slug } }, publicationState: $state) {
+    data {
+      id
+      attributes {
+        slug
+        title
+        date
+        content
+        excerpt
+        author {
+          data {
+            attributes {
+              name
+              avatar {
+                data {
+                  attributes {
+                    formats
+                  }
+                }
+              }
+            }
+          }
+        }
+        cover {
+          data {
+            attributes {
+              formats
+            }
+          }
+        }
+      }
+    }
+  }
+}

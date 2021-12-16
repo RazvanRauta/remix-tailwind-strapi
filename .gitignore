@@ -9,3 +9,4 @@ api/build
 .env
 
 app/styles/*.css
+yarn-error.log

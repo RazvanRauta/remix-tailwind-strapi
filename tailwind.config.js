@@ -13,10 +13,7 @@ function withOpacity(variableName) {
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   darkMode: 'class',
-  content: [
-    './src/pages/**/*.{js,jsx,ts,tsx}',
-    './src/components/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./app/**/*.{js,jsx,ts,tsx}'],
 
   theme: {
     extend: {
@@ -25,17 +22,17 @@ module.exports = {
       },
       colors: {
         primary: {
-          light:  withOpacity('--color-primary-light'),
-          100:  withOpacity('--color-primary-100'),
-          200:  withOpacity('--color-primary-200'),
-          300:  withOpacity('--color-primary-300'),
-          400:  withOpacity('--color-primary-400'),
-          500:  withOpacity('--color-primary-500'),
-          600:  withOpacity('--color-primary-600'),
-          700:  withOpacity('--color-primary-700'),
-          800:  withOpacity('--color-primary-800'),
-          900:  withOpacity('--color-primary-900'),
-          dark:  withOpacity('--color-primary-dark'),
+          light: withOpacity('--color-primary-light'),
+          100: withOpacity('--color-primary-100'),
+          200: withOpacity('--color-primary-200'),
+          300: withOpacity('--color-primary-300'),
+          400: withOpacity('--color-primary-400'),
+          500: withOpacity('--color-primary-500'),
+          600: withOpacity('--color-primary-600'),
+          700: withOpacity('--color-primary-700'),
+          800: withOpacity('--color-primary-800'),
+          900: withOpacity('--color-primary-900'),
+          dark: withOpacity('--color-primary-dark'),
         },
       },
       keyframes: {

@@ -1,0 +1,9 @@
+query PostsWithSlug($limit: Int!, $start: Int!) {
+  posts(pagination: { limit: $limit, start: $start }) {
+    data {
+      attributes {
+        slug
+      }
+    }
+  }
+}

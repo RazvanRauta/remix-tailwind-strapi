@@ -18,8 +18,8 @@ textarea {
   @apply text-black;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     @apply bg-gray-900 text-white;
   }
-}
+} */

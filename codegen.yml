@@ -1,0 +1,17 @@
+overwrite: true
+schema: 'http://localhost:1337/graphql'
+documents: 'app/**/*.graphql'
+generates:
+  app/generated/index.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-graphql-request':
+
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
+hooks:
+  afterOneFileWrite:
+    - eslint --fix
+    - prettier --write

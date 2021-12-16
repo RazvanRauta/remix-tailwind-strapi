@@ -124,7 +124,11 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main>
       <header>
-        <Button type='button' onClick={() => consola.info('click')}>
+        <Button
+          type='button'
+          color='primary'
+          onClick={() => consola.info('click')}
+        >
           Sign out
         </Button>
       </header>

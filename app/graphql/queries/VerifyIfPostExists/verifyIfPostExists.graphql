@@ -1,0 +1,9 @@
+query VerifyIfPostExists($slug: String!, $state: PublicationState!) {
+  posts(filters: { slug: { eq: $slug } }, publicationState: $state) {
+    data {
+      attributes {
+        slug
+      }
+    }
+  }
+}

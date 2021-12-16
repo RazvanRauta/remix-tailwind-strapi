@@ -1,0 +1,39 @@
+query PostsPaginated($limit: Int!, $start: Int!) {
+  posts(pagination: { limit: $limit, start: $start }) {
+    meta {
+      pagination {
+        total
+      }
+    }
+    data {
+      id
+      attributes {
+        title
+        slug
+        date
+        excerpt
+        cover {
+          data {
+            attributes {
+              formats
+            }
+          }
+        }
+        author {
+          data {
+            attributes {
+              name
+              avatar {
+                data {
+                  attributes {
+                    formats
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
