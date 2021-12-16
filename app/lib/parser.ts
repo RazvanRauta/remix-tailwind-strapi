@@ -1,7 +1,7 @@
 /**
  * @ @author: Razvan Rauta
- * @ Date: Dec 11 2021
- * @ Time: 23:14
+ * @ Date: Dec 17 2021
+ * @ Time: 00:30
  */
 
 import type { PostEntity } from '~/generated';

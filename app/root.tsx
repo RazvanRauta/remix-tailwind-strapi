@@ -14,6 +14,7 @@ import appStyles from '~/styles/app.css';
 import tailwindStyles from '~/styles/tailwind.css';
 
 import { Button } from './components/Button';
+import ProgressBar from './components/ProgressBar';
 
 // https://remix.run/api/app#links
 export const links: LinksFunction = () => {
@@ -122,7 +123,8 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
+    <main className='pt-3'>
+      <ProgressBar />
       <header>
         <Button
           type='button'
